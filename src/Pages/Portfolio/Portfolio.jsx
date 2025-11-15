@@ -12,7 +12,8 @@ const projectsData = [
     tech: ["JavaScript", "Tailwind", "ReactJs"],
     imageUrl: "/src/assets/images/nested-e-commerce.png",
     liveLink: "https://tailwind-react-react-router-project.vercel.app/",
-    githubLink: "https://github.com/Rupokhossain/Tailwind-react-react-router---project",
+    githubLink:
+      "https://github.com/Rupokhossain/Tailwind-react-react-router---project",
   },
   {
     number: "02",
@@ -38,7 +39,6 @@ const projectsData = [
 ];
 
 const LatestProjects = () => {
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -59,7 +59,7 @@ const LatestProjects = () => {
         {/* Header */}
         <div className="relative inline-block mb-12">
           <h2 className="text-4xl font-medium">
-           Latest  
+            Latest
             <span className="text-green-400"> Project</span>
           </h2>
           {/* <div className="absolute top-1/2 -translate-y-1/2 -left-2 w-10 h-10 bg-blue-600 rounded-md z-0"></div> */}
@@ -83,13 +83,17 @@ const LatestProjects = () => {
             <div className="flex items-center gap-4">
               <a
                 href={currentProject.liveLink}
-                className="w-12 h-12 bg-gray-800 rounded-full flex justify-center items-center text-xl hover:bg-[#6ef08e] hover:text-gray-900 transition-colors duration-300"
+                className="w-12 h-12 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FiExternalLink />
               </a>
               <a
                 href={currentProject.githubLink}
-                className="w-12 h-12 bg-gray-800 rounded-full flex justify-center items-center text-xl hover:bg-[#6ef08e] hover:text-gray-900 transition-colors duration-300"
+                className="w-12 h-12 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub />
               </a>
@@ -101,10 +105,9 @@ const LatestProjects = () => {
             <img
               src={currentProject.imageUrl}
               alt={currentProject.title}
-              className="project-image w-full h-64 object-contain" 
+              className="project-image w-full h-64 object-contain"
             />
           </div>
-
         </div>
 
         {/* navigate btn*/}

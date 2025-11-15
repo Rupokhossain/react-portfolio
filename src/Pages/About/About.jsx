@@ -36,7 +36,7 @@ const About = () => {
     },
   ];
 
-  // const socialLinks = [
+
   //   {
   //     href: "https://github.com",
   //     icon: <FaGithub />,
@@ -184,7 +184,7 @@ const About = () => {
 
       
       <div className="mt-16">
-        <h2 className="text-4xl font-semibold mb-8">What I’m Doing</h2>
+        <h2 className="md:text-4xl text-3xl font-semibold mb-8">What I’m Doing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, index) => (
             <div
