@@ -20,7 +20,7 @@ const projectsData = [
     title: "Blog Site",
     description:
       "A complete admin dashboard for an e-commerce platform. Features include data visualization, order management, and product tracking. Built using React and Tailwind CSS.",
-    tech: ["React", "Tailwind CSS", "Javascript.js"],
+    tech: ["React", "Tailwind", "Javascript.js"],
     imageUrl: "/src/assets/images/blog-site.png",
 
     liveLink: "https://blog-site-brown-chi.vercel.app/",
@@ -57,22 +57,23 @@ const LatestProjects = () => {
     <div className="bg-[#21262f] text-white px-10 py-16 rounded-lg">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="relative inline-block mb-12">
-          <h2 className="text-4xl font-medium">
+        <div className="relative inline-block md:mb-12 mb-8">
+          <h2 className="md:text-4xl text-3xl font-medium">
             Latest
             <span className="text-green-400"> Project</span>
           </h2>
+          <div className="border-b-[5px] inline-block w-14 text-[#6ef08e] rounded"></div>
           {/* <div className="absolute top-1/2 -translate-y-1/2 -left-2 w-10 h-10 bg-blue-600 rounded-md z-0"></div> */}
         </div>
 
         {/* Content*/}
-        <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
           {/* left side */}
           <div className="lg:w-1/2 w-full">
-            <p className="text-8xl font-bold text-transparent [-webkit-text-stroke:1px_#4b5563] mb-4">
+            <p className="md:text-8xl text-6xl font-bold text-transparent [-webkit-text-stroke:1px_#4b5563] mb-4">
               {currentProject.number}
             </p>
-            <h3 className="text-3xl font-semibold mb-4">
+            <h3 className="md:text-3xl text-xl font-semibold mb-4">
               {currentProject.title}
             </h3>
             <p className="text-gray-400  mb-6">{currentProject.description}</p>
@@ -83,7 +84,7 @@ const LatestProjects = () => {
             <div className="flex items-center gap-4">
               <a
                 href={currentProject.liveLink}
-                className="w-12 h-12 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
+                className="md:w-12 md:h-12 w-10 h-10 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -91,7 +92,7 @@ const LatestProjects = () => {
               </a>
               <a
                 href={currentProject.githubLink}
-                className="w-12 h-12 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
+                className="md:w-12 md:h-12 w-10 h-10 bg-[#313945] rounded-full flex justify-center items-center text-xl hover:bg-green-400 hover:text-gray-900 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -105,13 +106,13 @@ const LatestProjects = () => {
             <img
               src={currentProject.imageUrl}
               alt={currentProject.title}
-              className="project-image w-full h-64 object-contain"
+              className="w-full h-48 sm:h-56 lg:h-64  object-contain rounded-lg"
             />
           </div>
         </div>
 
         {/* navigate btn*/}
-        <div className="flex justify-end gap-4 mt-12 py-1">
+        <div className="flex justify-center lg:justify-end gap-4 mt-8">
           <button
             onClick={handlePrev}
             className="w-12 h-12 border-2 cursor-pointer border-gray-600 rounded-md flex justify-center items-center text-gray-400 hover:border-green-400 hover:text-green-400 transition-colors duration-300"

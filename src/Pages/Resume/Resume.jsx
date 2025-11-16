@@ -56,16 +56,17 @@ const EducationTimeline = () => {
 
       <div className="mt-15">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-12 h-12 text-lg rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
+        <div className="flex items-center md:gap-3 gap-2 mb-8">
+          <div className="w-12 h-12  text-md rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
             <BsPersonVcardFill />
           </div>
-          <p className="text-base text-white font-medium uppercase">
+          <p className="text-base  text-white md:font-medium font-normal md:uppercase">
             Personal Information :
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-8">
-          <div className="flex gap-4">
+
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 md:px-16 xl:px-0">
+          <div className="flex gap-3">
             <span className="text-[#6ef08e] text-base font-light">Name</span>
             <p className="text-base font-light text-neutral-300">
               Rupok Hossain Siam
@@ -133,24 +134,24 @@ const EducationTimeline = () => {
         </div>
 
         {/* Vertical line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
-
+        <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-700"></div>
+        
         {/* Timeline items */}
         {timelineData.map((item, index) => (
           <div key={index} className="relative mb-16">
             {/* Dot */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-5 h-5 bg-[#6ef08e] rounded-full border-4 border-gray-800 shadow-[0_0_10px_#6ef08e80]"></div>
+            <div className="absolute hidden md:block left-1/2 transform -translate-x-1/2 w-5 h-5 bg-[#6ef08e] rounded-full border-4 border-gray-800 shadow-[0_0_10px_#6ef08e80] z-10"></div>
 
             {/* Card */}
             <div
-              className={`w-[calc(50%-2rem)] p-5 bg-[#313945] cursor-pointer rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_15px_#6ef08e80] hover:border-l-4 hover:border-[#6ef08e] ${
-                index % 2 === 0 ? "mr-auto" : "ml-auto"
+              className={`w-full sm:w-[calc(50%-2rem)] p-5 bg-[#313945] cursor-pointer rounded-2xl shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_15px_#6ef08e80] hover:border-l-4 hover:border-[#6ef08e] ${
+                index % 2 === 0 ? "sm:mr-auto" : "sm:ml-auto"
               }`}
             >
               <span className="text-[#6ef08e] font-semibold text-sm">
                 {item.year}
               </span>
-              <h3 className="text-lg font-semibold text-white mt-1">
+              <h3 className="md:text-lg text-base font-semibold text-white md:mt-1 my-2">
                 {item.title}
               </h3>
               <p className="text-gray-300 text-sm mt-2 italic">
@@ -165,7 +166,7 @@ const EducationTimeline = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="pt-14">
+      <div className="md:pt-14 pt-4">
         <div className="flex items-center gap-3 mb-8">
           <div className="w-12 h-12 text-lg rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
             <FaCode />
@@ -173,7 +174,7 @@ const EducationTimeline = () => {
           <p className="text-base text-white font-medium uppercase">Skills :</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 grid-cols-1  gap-8">
           <SkillGroup title="Frontend" items={skills.frontend} />
           <SkillGroup title="Tools & Technologies" items={skills.tools} />
           <SkillGroup title="Soft Skills" items={skills.softSkills} />

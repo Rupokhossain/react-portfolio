@@ -28,20 +28,20 @@ const Contact = () => {
     <div className="text-white p-8 md:p-16">
       {/* --- Main Heading --- */}
       <div className="">
-        <h2 className="text-4xl font-medium">Contact Me</h2>
+        <h2 className="md:text-4xl text-3xl font-medium">Contact Me</h2>
         <div className="border-b-[5px] inline-block w-14 border-[#6ef08e] rounded mt-2"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-12">
+      <div className="max-w-7xl mx-auto md:mt-12 mt-8">
         {/* --- Top Section: Contact Info --- */}
         <div className="text-center md:text-left mb-16">
-          <h2 className="text-3xl font-semibold mb-4">Let's Work Together</h2>
+          <h2 className="md:text-3xl text-xl font-semibold mb-4">Let's Work Together</h2>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto md:mx-0">
             I'm always excited to connect with new people and explore
             interesting opportunities. Feel free to reach out through the form
             or my contact details below.
           </p>
-          <div className="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-8">
+          <div className="flex flex-col  sm:flex-row sm:justify-center md:justify-between gap-8">
             {contactInfo.map((item, index) => (
               <a
                 key={index}
@@ -54,7 +54,7 @@ const Contact = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-gray-400 font-semibold cursor-pointer">
+                  <p className="text-gray-400 text-start  font-semibold cursor-pointer">
                     {item.label}
                   </p>
                   <p className="text-gray-300 font-medium  cursor-pointer group-hover:text-white transition-colors">

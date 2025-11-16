@@ -5,18 +5,21 @@ import { GiMailbox, GiPhone } from "react-icons/gi";
 
 const Slidebar = () => {
   return (
-    <div>
+    <div >
       <div className="backdrop-brightness-105 text-white 
         xl:w-72 lg:w-64 w-full 
         flex flex-col md:flex-row md:justify-between lg:flex-col 
         justify-center items-center 
         md:items-start lg:items-center
-        px-4 py-8 rounded-2xl shadow-xl gap-10 md:gap-8">
+        px-4 lg:py-8 py-12 rounded-2xl shadow-xl gap-10 md:gap-8
+        lg:fixed lg:h-max
+
+        ">
 
         {/* ------------ IMAGE + NAME ------------ */}
         <div className="flex flex-col md:flex-row lg:flex-col md:w-1/2 lg:w-full
           justify-center items-center md:items-start lg:items-center 
-          gap-6">
+          gap-6" >
 
           <img
             src="/src/assets/images/siam.png"
@@ -36,7 +39,7 @@ const Slidebar = () => {
         </div>
 
         {/* ------------ CONTACT SECTION ------------ */}
-        <div className="flex flex-col gap-6 w-full md:w-1/2">
+        <div className="flex flex-col gap-6 lg:w-full md:w-1/2">
           <div className="bg-gray-600 h-0.5 w-full md:hidden lg:block block"></div>
 
           {/* Each item row */}

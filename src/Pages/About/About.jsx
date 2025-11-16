@@ -60,13 +60,13 @@ const About = () => {
   // ];
 
   return (
-    <div className="py-16 px-10 rounded-lg">
+    <div className="md:py-16 py-8 md:px-10 px-4 rounded-lg">
       <div>
         <h2 className="text-4xl font-medium">About Me</h2>
         <div className="border-b-[5px] inline-block w-14 text-[#6ef08e] rounded"></div>
       </div>
 
-      <div className="mt-10">
+      <div className="md:mt-10 mt-7">
         <p className="text-gray-400 leading-8 tracking-widest">
           Hi, I'm{" "}
           <span className="text-[#6ef08e] font-medium">Rupok Hossain Siam</span>
@@ -183,7 +183,7 @@ const About = () => {
       </div> */}
 
       
-      <div className="mt-16">
+      <div className="md:mt-16 mt-12">
         <h2 className="md:text-4xl text-3xl font-semibold mb-8">What I’m Doing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, index) => (
@@ -192,7 +192,7 @@ const About = () => {
               className="bg-[#313945] cursor-pointer duration-300 p-6 rounded-2xl flex flex-col gap-3 shadow-lg hover:shadow-[#7cf03d]/30 hover:-translate-y-1 transition-all"
             >
               <div className="text-[#7cf03d] text-3xl">{item.icon}</div>
-              <h3 className="text-lg font-semibold">{item.title}</h3>
+              <h3 className="md:text-lg text-base font-semibold">{item.title}</h3>
               <p className="text-gray-400 text-sm">{item.desc}</p>
             </div>
           ))}
