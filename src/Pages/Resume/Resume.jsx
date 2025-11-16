@@ -36,13 +36,13 @@ const EducationTimeline = () => {
 
   return (
     <div className="px-10 py-16 rounded-lg">
-      <div>
+      <div data-aos="fade-right">
         <h2 className="text-4xl font-medium">Resume</h2>
         <div className="border-b-[5px] inline-block w-14 text-[#6ef08e] rounded"></div>
       </div>
 
       {/* Objective Section */}
-      <div className="bg-[#313945] p-6 rounded-2xl shadow-lg my-12">
+      <div className="bg-[#313945] p-6 rounded-2xl shadow-lg my-12" data-aos="fade-up">
         <h3 className="text-xl font-semibold text-[#6ef08e] mb-3">
           Career Objective
         </h3>
@@ -54,7 +54,7 @@ const EducationTimeline = () => {
         </p>
       </div>
 
-      <div className="mt-15">
+      <div className="mt-15" data-aos="fade-up" data-aos-delay="150">
         {/* Header */}
         <div className="flex items-center md:gap-3 gap-2 mb-8">
           <div className="w-12 h-12  text-md rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
@@ -124,7 +124,7 @@ const EducationTimeline = () => {
 
       <div className="relative mt-15">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center gap-3 mb-8" data-aos="fade-right">
           <div className="w-12 h-12 text-lg rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
             <FaBookReader />
           </div>
@@ -138,7 +138,7 @@ const EducationTimeline = () => {
         
         {/* Timeline items */}
         {timelineData.map((item, index) => (
-          <div key={index} className="relative mb-16">
+          <div key={index} className="relative mb-16" data-aos="fade-up" data-aos-delay={index * 200}>
             {/* Dot */}
             <div className="absolute hidden md:block left-1/2 transform -translate-x-1/2 w-5 h-5 bg-[#6ef08e] rounded-full border-4 border-gray-800 shadow-[0_0_10px_#6ef08e80] z-10"></div>
 
@@ -166,15 +166,15 @@ const EducationTimeline = () => {
       </div>
 
       {/* Skills Section */}
-      <div className="md:pt-14 pt-4">
-        <div className="flex items-center gap-3 mb-8">
+      <div className="md:pt-14 pt-4" >
+        <div className="flex items-center gap-3 mb-8" data-aos="fade-right">
           <div className="w-12 h-12 text-lg rounded-xl shadow-2xl cursor-pointer hover:scale-105 duration-300 transition-all text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
             <FaCode />
           </div>
           <p className="text-base text-white font-medium uppercase">Skills :</p>
         </div>
 
-        <div className="grid md:grid-cols-3 grid-cols-1  gap-8">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-8" data-aos="fade-up" data-aos-delay="150">
           <SkillGroup title="Frontend" items={skills.frontend} />
           <SkillGroup title="Tools & Technologies" items={skills.tools} />
           <SkillGroup title="Soft Skills" items={skills.softSkills} />
@@ -182,7 +182,7 @@ const EducationTimeline = () => {
       </div>
 
       {/* Download CV Button */}
-      <div className="text-center mt-12">
+      <div className="text-center mt-12" data-aos="zoom-in">
         <a
           href="/cv.pdf"
           download

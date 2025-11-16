@@ -8,7 +8,13 @@ import About from "./Pages/About/About";
 import Resume from "./Pages/Resume/Resume";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact/Contact";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
+Aos.init({
+  duration: 1000,
+  once: true,
+});
 const router = createBrowserRouter([
   {
     path: "/",

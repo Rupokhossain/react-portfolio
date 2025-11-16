@@ -1,5 +1,12 @@
 import { FaDiscord, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FiActivity, FiBookOpen, FiMonitor, FiPenTool, FiServer, FiZap } from "react-icons/fi";
+import {
+  FiActivity,
+  FiBookOpen,
+  FiMonitor,
+  FiPenTool,
+  FiServer,
+  FiZap,
+} from "react-icons/fi";
 
 const About = () => {
   const items = [
@@ -23,7 +30,7 @@ const About = () => {
       title: "Learning & Growth",
       desc: "Constantly learning new frameworks and improving my JavaScript skills.",
     },
-   {
+    {
       icon: <FiServer />,
       title: "API Integration & State Management",
       desc: "Connecting web applications to APIs and managing complex state using tools like Redux or Context API.",
@@ -35,7 +42,6 @@ const About = () => {
       desc: "Improving web performance through code splitting, lazy loading, and optimizing Core Web Vitals.",
     },
   ];
-
 
   //   {
   //     href: "https://github.com",
@@ -61,12 +67,12 @@ const About = () => {
 
   return (
     <div className="md:py-16 py-8 md:px-10 px-4 rounded-lg">
-      <div>
+      <div data-aos="fade-right">
         <h2 className="text-4xl font-medium">About Me</h2>
         <div className="border-b-[5px] inline-block w-14 text-[#6ef08e] rounded"></div>
       </div>
 
-      <div className="md:mt-10 mt-7">
+      <div className="md:mt-10 mt-7" data-aos="fade-up">
         <p className="text-gray-400 leading-8 tracking-widest">
           Hi, I'm{" "}
           <span className="text-[#6ef08e] font-medium">Rupok Hossain Siam</span>
@@ -182,17 +188,21 @@ const About = () => {
         </div>
       </div> */}
 
-      
-      <div className="md:mt-16 mt-12">
-        <h2 className="md:text-4xl text-3xl font-semibold mb-8">What I’m Doing</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {items.map((item, index) => (
+      <div className="md:mt-16 mt-12" data-aos="fade-left">
+        <h2 className="md:text-4xl text-3xl font-semibold mb-8">
+          What I’m Doing
+        </h2>
+        <div data-aos="fade-down" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {items.map((item) => (
             <div
-              key={index}
-              className="bg-[#313945] cursor-pointer duration-300 p-6 rounded-2xl flex flex-col gap-3 shadow-lg hover:shadow-[#7cf03d]/30 hover:-translate-y-1 transition-all"
-            >
+              className="bg-[#313945] cursor-pointer transition-all 
+                hover:duration-300 
+                ease-out p-6 rounded-2xl flex flex-col gap-3 shadow-lg hover:shadow-[#7cf03d]/30 hover:-translate-y-1"
+                >
               <div className="text-[#7cf03d] text-3xl">{item.icon}</div>
-              <h3 className="md:text-lg text-base font-semibold">{item.title}</h3>
+              <h3 className="md:text-lg text-base font-semibold">
+                {item.title}
+              </h3>
               <p className="text-gray-400 text-sm">{item.desc}</p>
             </div>
           ))}

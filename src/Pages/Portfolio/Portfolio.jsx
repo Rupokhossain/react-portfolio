@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 
 const projectsData = [
   {
@@ -50,6 +52,14 @@ const LatestProjects = () => {
       (prevIndex) => (prevIndex - 1 + projectsData.length) % projectsData.length
     );
   };
+  useEffect(() => {
+    AOS.init({ duration: 800, easing: "ease-out-cubic", once: true });
+  }, []);
+
+  // Refresh AOS whenever currentIndex changes
+  useEffect(() => {
+    AOS.refresh();
+  }, [currentIndex]);
 
   const currentProject = projectsData[currentIndex];
 
@@ -57,7 +67,10 @@ const LatestProjects = () => {
     <div className="bg-[#21262f] text-white px-10 py-16 rounded-lg">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="relative inline-block md:mb-12 mb-8">
+        <div
+          data-aos="fade-right"
+          className="relative inline-block md:mb-12 mb-8"
+        >
           <h2 className="md:text-4xl text-3xl font-medium">
             Latest
             <span className="text-green-400"> Project</span>
@@ -69,15 +82,21 @@ const LatestProjects = () => {
         {/* Content*/}
         <div className="flex flex-col lg:flex-row items-center lg:gap-12 gap-8">
           {/* left side */}
-          <div className="lg:w-1/2 w-full">
-            <p className="md:text-8xl text-6xl font-bold text-transparent [-webkit-text-stroke:1px_#4b5563] mb-4">
+          <div
+            className="lg:w-1/2 w-full"
+            data-aos="fade-right"
+            data-aos-delay="150"
+        key={currentIndex}
+
+          >
+            <p data-aos="fade-up" data-aos-delay="100" className="md:text-8xl text-6xl font-bold text-transparent [-webkit-text-stroke:1px_#4b5563] mb-4">
               {currentProject.number}
             </p>
-            <h3 className="md:text-3xl text-xl font-semibold mb-4">
+            <h3 data-aos="fade-up" data-aos-delay="200" className="md:text-3xl text-xl font-semibold mb-4">
               {currentProject.title}
             </h3>
-            <p className="text-gray-400  mb-6">{currentProject.description}</p>
-            <p className="text-green-400 font-semibold mb-6">
+            <p data-aos="fade-up" data-aos-delay="300" className="text-gray-400  mb-6">{currentProject.description}</p>
+            <p data-aos="fade-up" data-aos-delay="400" className="text-green-400 font-semibold mb-6">
               {currentProject.tech.join(",  ")}
             </p>
             <hr className="border-gray-600 mb-6" />
@@ -102,12 +121,14 @@ const LatestProjects = () => {
           </div>
 
           {/* right side */}
-          <div className="lg:w-1/2 w-full project-card bg-white shadow-lg rounded-xl overflow-hidden hover:scale-105 cursor-pointer transition-transform duration-300">
-            <img
-              src={currentProject.imageUrl}
-              alt={currentProject.title}
-              className="w-full h-48 sm:h-56 lg:h-64  object-contain rounded-lg"
-            />
+          <div   className="lg:w-1/2 w-full bg-white shadow-lg rounded-xl overflow-hidden cursor-pointer transition-transform duration-500 hover:scale-105 will-change-transform">
+            <div  key={currentIndex} data-aos="fade-left" data-aos-delay="300">
+              <img
+                src={currentProject.imageUrl}
+                alt={currentProject.title}
+                className="w-full h-48 sm:h-56 lg:h-64  object-contain rounded-lg"
+              />
+            </div>
           </div>
         </div>
 

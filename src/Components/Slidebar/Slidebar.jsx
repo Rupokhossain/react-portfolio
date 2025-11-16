@@ -6,7 +6,8 @@ import { GiMailbox, GiPhone } from "react-icons/gi";
 const Slidebar = () => {
   return (
     <div >
-      <div className="backdrop-brightness-105 text-white 
+      <div
+      data-aos="fade-right" className="backdrop-brightness-105 text-white 
         xl:w-72 lg:w-64 w-full 
         flex flex-col md:flex-row md:justify-between lg:flex-col 
         justify-center items-center 
@@ -19,7 +20,7 @@ const Slidebar = () => {
         {/* ------------ IMAGE + NAME ------------ */}
         <div className="flex flex-col md:flex-row lg:flex-col md:w-1/2 lg:w-full
           justify-center items-center md:items-start lg:items-center 
-          gap-6" >
+          gap-6"  data-aos="zoom-in">
 
           <img
             src="/src/assets/images/siam.png"
@@ -46,7 +47,7 @@ const Slidebar = () => {
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 text-lg rounded-xl shadow-2xl 
               cursor-pointer hover:scale-105 duration-300 
-              text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
+              text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center" data-aos="fade-up">
               <a href="mailto:rh.siam999@gmail.com">
                 <GiMailbox />
               </a>
@@ -64,7 +65,7 @@ const Slidebar = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4" data-aos="fade-up" data-aos-delay="100">
             <div className="w-12 h-12 text-lg rounded-xl shadow-2xl 
               cursor-pointer hover:scale-105 duration-300 
               text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
@@ -83,7 +84,7 @@ const Slidebar = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4"  data-aos="fade-up" data-aos-delay="200">
             <div className="w-12 h-12 text-lg rounded-xl shadow-2xl 
               cursor-pointer hover:scale-105 duration-300 
               text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
@@ -108,7 +109,7 @@ const Slidebar = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4" data-aos="fade-up" data-aos-delay="300">
             <div className="w-12 h-12 text-lg rounded-xl shadow-2xl 
               cursor-pointer hover:scale-105 duration-300 
               text-[#6ef08e] bg-[#2b2b2c] flex justify-center items-center">
