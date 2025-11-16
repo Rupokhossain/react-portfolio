@@ -12,7 +12,7 @@ const projectsData = [
     description:
       "A modern and responsive landing page for an Italian E-commerce. Built with a focus on clean UI, engaging animations, and a seamless user experience.",
     tech: ["JavaScript", "Tailwind", "ReactJs"],
-    imageUrl: "/public/asstes/images/nested-e-commerce.png",
+    imageUrl: "/public/assets/images/nested-e-commerce.png",
     liveLink: "https://tailwind-react-react-router-project.vercel.app/",
     githubLink:
       "https://github.com/Rupokhossain/Tailwind-react-react-router---project",
@@ -23,7 +23,7 @@ const projectsData = [
     description:
       "A complete admin dashboard for an e-commerce platform. Features include data visualization, order management, and product tracking. Built using React and Tailwind CSS.",
     tech: ["React", "Tailwind", "Javascript.js"],
-    imageUrl: "/public/asstes/images/blog-site.png",
+    imageUrl: "/public/assets/images/blog-site.png",
 
     liveLink: "https://blog-site-brown-chi.vercel.app/",
     githubLink: "https://github.com/Rupokhossain/Blog-Site",
