@@ -23,7 +23,7 @@ const Slidebar = () => {
           gap-6"  data-aos="zoom-in">
 
           <img
-            src="/public/assets/images/siam.png"
+            src="/src/assets/images/siam.png"
             alt=""
             className="w-32 rounded-2xl shrink-0 md:min-w-32"
           />
