@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { GiMailbox, GiPhone } from "react-icons/gi";
+import siamImg from "../../assets/images/siam.png";
 
 const Slidebar = () => {
   return (
@@ -23,7 +24,7 @@ const Slidebar = () => {
           gap-6"  data-aos="zoom-in">
 
           <img
-            src="/src/assets/images/siam.png"
+            src={siamImg}
             alt=""
             className="w-32 rounded-2xl shrink-0 md:min-w-32"
           />

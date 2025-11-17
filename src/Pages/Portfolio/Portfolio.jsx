@@ -3,6 +3,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import blogImg from "../../assets/images/blog-site.png";
+import nestedImg from "../../assets/images/nested-e-commerce.png";
 
 
 const projectsData = [
@@ -12,7 +14,7 @@ const projectsData = [
     description:
       "A modern and responsive landing page for an Italian E-commerce. Built with a focus on clean UI, engaging animations, and a seamless user experience.",
     tech: ["JavaScript", "Tailwind", "ReactJs"],
-    imageUrl: "/src/assets/images/nested-e-commerce.png",
+    imageUrl: nestedImg,
     liveLink: "https://tailwind-react-react-router-project.vercel.app/",
     githubLink:
       "https://github.com/Rupokhossain/Tailwind-react-react-router---project",
@@ -23,7 +25,7 @@ const projectsData = [
     description:
       "A complete admin dashboard for an e-commerce platform. Features include data visualization, order management, and product tracking. Built using React and Tailwind CSS.",
     tech: ["React", "Tailwind", "Javascript.js"],
-    imageUrl: "/src/assets/images/blog-site.png",
+    imageUrl: blogImg,
 
     liveLink: "https://blog-site-brown-chi.vercel.app/",
     githubLink: "https://github.com/Rupokhossain/Blog-Site",
