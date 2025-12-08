@@ -6,7 +6,7 @@ import SkillGroup from "./SkillGroup";
 const EducationTimeline = () => {
   const timelineData = [
     {
-      year: "2024 - Present",
+      year: "2025 (Sep-Nov)",
       title: "Frontend Industrial Attachment",
       institution: "BD Calling IT Ltd.",
       description:
@@ -29,7 +29,7 @@ const EducationTimeline = () => {
   ];
 
   const skills = {
-    frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    frontend: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React Js", "Next Js"],
     tools: ["Git", "GitHub", "VS Code", "Figma", "Vite"],
     softSkills: ["Teamwork", "Communication", "Problem Solving"],
   };
