@@ -4,20 +4,21 @@ import "aos/dist/aos.css";
 import { FiExternalLink } from "react-icons/fi";
 import { FaGithub, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import blogImg from "../../assets/images/blog-site.png";
-import nestedImg from "../../assets/images/nested-e-commerce.png";
+import e_commerce from "../../assets/images/e-commerce.png";
+import modern from "../../assets/images/modern.png";
 
 
 const projectsData = [
   {
     number: "01",
-    title: "Nested E-Commerce",
+    title: "E-Commerce",
     description:
       "A modern and responsive landing page for an Italian E-commerce. Built with a focus on clean UI, engaging animations, and a seamless user experience.",
     tech: ["JavaScript", "Tailwind", "ReactJs"],
-    imageUrl: nestedImg,
-    liveLink: "https://tailwind-react-react-router-project.vercel.app/",
+    imageUrl: e_commerce,
+    liveLink: "https://react-ecommerce-orcin-three.vercel.app/",
     githubLink:
-      "https://github.com/Rupokhossain/Tailwind-react-react-router---project",
+      "https://github.com/Rupokhossain/React_E-commerce",
   },
   {
     number: "02",
@@ -30,16 +31,16 @@ const projectsData = [
     liveLink: "https://blog-site-brown-chi.vercel.app/",
     githubLink: "https://github.com/Rupokhossain/Blog-Site",
   },
-  // {
-  //   number: "03",
-  //   title: "Portfolio Website",
-  //   description:
-  //     "A personal portfolio website to showcase my skills and projects. Designed to be fast, elegant, and fully responsive across all devices, with smooth animations.",
-  //   tech: ["Next.js", "Framer Motion", "Tailwind CSS"],
-  //   imageUrl: "https://i.imgur.com/xT5a3v6.png", // আপনার প্রজেক্টের ছবির লিঙ্ক দিন
-  //   liveLink: "#",
-  //   githubLink: "#",
-  // },
+  {
+    number: "03",
+    title: "Modern-business-landing-page-react",
+    description:
+      "A personal Modern business Website to showcase my skills and projects. Designed to be fast, elegant, and fully responsive across all devices, with smooth animations.",
+    tech: ["Tailwind CSS", "React Js", "JavaScript"],
+    imageUrl: modern,
+    liveLink: "https://react-landing-page-one-blond.vercel.app/",
+    githubLink: "https://github.com/Rupokhossain/react_landing_page",
+  },
 ];
 
 const LatestProjects = () => {
