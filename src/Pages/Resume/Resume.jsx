@@ -184,7 +184,7 @@ const EducationTimeline = () => {
       {/* Download CV Button */}
       <div className="text-center mt-12" data-aos="zoom-in">
         <a
-          href="/src/assets/cv/Siam.pdf"
+          href="/src/assets/cv/siam.pdf"
           download
           // className="bg-[#6ef08e] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#5cd880] transition-all inline-flex items-center gap-2"
           className="px-6 py-3 border border-[#6ef08e] text-[#6ef08e] font-medium rounded-lg hover:bg-[#7cf03d]/10 transition-all inline-flex items-center justify-center gap-2"
