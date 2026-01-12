@@ -29,7 +29,7 @@ const EducationTimeline = () => {
   ];
 
   const skills = {
-    frontend: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React Js", "Next Js"],
+    frontend: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React Js", "Next Js", "Redux"],
     tools: ["Git", "GitHub", "VS Code", "Figma", "Vite"],
     softSkills: ["Teamwork", "Communication", "Problem Solving"],
   };
@@ -184,7 +184,7 @@ const EducationTimeline = () => {
       {/* Download CV Button */}
       <div className="text-center mt-12" data-aos="zoom-in">
         <a
-          href="/cv/siam.cv.pdf"
+          href="/cv/update_cv.pdf"
           download
 
           className="px-6 py-3 border border-[#6ef08e] text-[#6ef08e] font-medium rounded-lg hover:bg-[#7cf03d]/10 transition-all inline-flex items-center justify-center gap-2"
