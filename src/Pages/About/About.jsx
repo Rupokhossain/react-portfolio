@@ -73,17 +73,40 @@ const About = () => {
       </div>
 
       <div className="md:mt-10 mt-7" data-aos="fade-up">
-        <p className="text-gray-400 leading-8 tracking-widest">
-          Hi, I'm{" "}
-          <span className="text-[#6ef08e] font-medium">Rupok Hossain Siam</span>
-          , a passionate frontend developer dedicated to building modern,
-          responsive, and user-friendly websites. I enjoy combining design and
-          logic to create interfaces that look great and work smoothly. I mostly
-          work with{" "}
-          <span className="text-gray-200">
-            React, Tailwind CSS, and JavaScript.
-          </span>
-        </p>
+        <div className="text-gray-400 leading-8 tracking-widest space-y-4">
+          <p>
+            Hi, I'm{" "}
+            <span className="text-[#6ef08e] font-medium text-lg">
+              Rupok Hossain Siam
+            </span>
+            , a passionate frontend developer from Bangladesh. My journey into
+            the world of programming started with a simple curiosity about how
+            the internet works. What began as a hobby of tweaking HTML tags
+            quickly evolved into a dedicated career path where I now build
+            modern, responsive, and highly functional web applications.
+          </p>
+
+          <p>
+            I truly enjoy the process of turning a blank canvas into a living,
+            breathing user interface. I specialize in{" "}
+            <span className="text-gray-200">
+              React, Tailwind CSS, and JavaScript
+            </span>
+            . Beyond just writing code, I love solving complex logical problems
+            and optimizing web performance to ensure the best possible user
+            experience. For me, web development isn't just a job; it's a way of
+            bringing creative ideas to life.
+          </p>
+
+          <p>
+            When I'm not coding or debugging, you'll probably find me on a
+            **Football** field or exploring new places through **Traveling**. I
+            also have a keen interest in **Photography**, which helps me look at
+            the world from different perspectives. I believe that a healthy
+            balance between technology and creative hobbies makes me a better
+            developer and a more well-rounded individual.
+          </p>
+        </div>
       </div>
 
       {/* <div className="mt-10">
@@ -192,13 +215,16 @@ const About = () => {
         <h2 className="md:text-4xl text-3xl font-semibold mb-8">
           What I’m Doing
         </h2>
-        <div data-aos="fade-down" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div
+          data-aos="fade-down"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {items.map((item) => (
             <div
               className="bg-[#313945] cursor-pointer transition-all 
                 hover:duration-300 
                 ease-out p-6 rounded-2xl flex flex-col gap-3 shadow-lg hover:shadow-[#7cf03d]/30 hover:-translate-y-1"
-                >
+            >
               <div className="text-[#7cf03d] text-3xl">{item.icon}</div>
               <h3 className="md:text-lg text-base font-semibold">
                 {item.title}
