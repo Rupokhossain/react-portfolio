@@ -1,18 +1,24 @@
-
 import { NavLink } from "react-router";
 
 const MainContent = () => {
   return (
-    <div className="">
+    <div>
       {/* Desktop */}
-      <div  data-aos="fade-down" className=" hidden md:block
-       absolute xl:top-16 lg:top-16 md:top-[465px] md:right-5 xl:right-0
+      <div
+        data-aos="fade-down"
+        className="hidden md:block
+                  absolute
+                  xl:top-16
+                  lg:top-16
+                  md:top-[410px]
+                  md:right-5
         border border-gray-600 
         bg-[#232429] 
         px-6 py-5 
         rounded-bl-2xl rounded-tr-2xl
         z-50
-      ">
+      "
+      >
         <div className="text-base font-medium text-gray-300 flex space-x-10">
           <NavLink
             to="/"
@@ -61,8 +67,23 @@ const MainContent = () => {
       </div>
 
       {/* Mobile & Tablet */}
-      <div data-aos="fade-up" className="md:hidden fixed bottom-0 w-full flex justify-center z-50">
-        <div className="border border-gray-600 bg-[#232429] px-4 py-4 rounded-bl-2xl rounded-tr-2xl">
+      <div
+        data-aos="fade-up"
+        className="md:hidden
+                    fixed
+                    bottom-4
+                    left-1/2
+                    -translate-x-1/2
+                    z-50"
+      >
+        <div
+          className="border
+                  border-gray-600
+                  bg-[#232429]
+                     px-3
+                    py-4
+                     rounded-2xl"
+        >
           <div className="text-sm font-medium text-gray-300 flex gap-6">
             <NavLink
               to="/"
@@ -107,12 +128,8 @@ const MainContent = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };
-
-
 
 export default MainContent;

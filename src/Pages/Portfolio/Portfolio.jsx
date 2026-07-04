@@ -48,7 +48,7 @@ const LatestProjects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    // jumping issue fix: disable AOS refresh inside this component and use once:true
+
     AOS.init({ duration: 800, easing: "ease-out-cubic", once: true });
   }, []);
 
@@ -63,7 +63,7 @@ const LatestProjects = () => {
   const currentProject = projectsData[currentIndex];
 
   return (
-    <div id="portfolio" className="bg-[#21262F] text-white px-6 md:px-10 py-16 rounded-2xl min-h-[700px] transition-all duration-500">
+    <div id="portfolio" className="bg-[#21262F] text-white px-6 md:px-10 md:py-24 lg:py-16 rounded-2xl min-h-[700px] transition-all duration-500">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div data-aos="fade-right" className="relative inline-block md:mb-12 mb-8">
@@ -87,7 +87,7 @@ const LatestProjects = () => {
               {currentProject.description}
             </p>
 
-            {/* View More Button - Requirement #9 */}
+            {/* View More Button */}
             <button 
               onClick={() => setIsModalOpen(true)}
               className="mb-8 px-6 py-2.5 bg-[#6ef08e] text-black font-bold rounded-lg hover:bg-white transition-all transform hover:scale-105 cursor-pointer duration-300"
@@ -125,7 +125,7 @@ const LatestProjects = () => {
         </div>
 
         {/* Navigation Controls */}
-        <div className="flex justify-center lg:justify-start gap-4 mt-12">
+        <div className="flex justify-center lg:justify-start gap-4 mt-12 mb-10 md:mb-0">
           <button onClick={handlePrev} className="p-3 border border-gray-700 rounded-xl hover:border-[#6ef08e] hover:text-[#6ef08e] transition-all cursor-pointer">
             <FaChevronLeft size={20} />
           </button>
@@ -137,7 +137,7 @@ const LatestProjects = () => {
 
       {/* --- DETAILED PROJECT MODAL (Requirement #9) --- */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 p-4 backdrop-blur-md">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-black/90 p-4 backdrop-blur-md">
           <div className="bg-[#1e2530] border border-gray-800 p-6 md:p-10 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
             <button onClick={() => setIsModalOpen(false)} className="absolute top-5 right-5 text-2xl text-gray-400 hover:text-white transition-colorsc cursor-pointer">
               <FiX />

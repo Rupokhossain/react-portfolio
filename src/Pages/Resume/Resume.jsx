@@ -52,7 +52,7 @@ const EducationTimeline = () => {
     ],
   };
   return (
-    <div className="px-10 py-16 rounded-lg">
+    <div className="px-6 md:px-10 md:py-24 lg:py-16 rounded-lg">
       <div data-aos="fade-right">
         <h2 className="text-4xl font-medium">Resume</h2>
         <div className="border-b-[5px] inline-block w-14 text-[#6ef08e] rounded"></div>
@@ -60,7 +60,7 @@ const EducationTimeline = () => {
 
       {/* Objective Section */}
       <div
-        className="relative bg-[#1e2530] border-l-4 border-[#6ef08e] p-8 md:p-10 rounded-r-2xl shadow-2xl my-8 overflow-hidden"
+        className="relative bg-[#1e2530] border-l-4 border-[#6ef08e] p-6 md:p-10 rounded-r-2xl shadow-2xl my-8 overflow-hidden"
         data-aos="fade-up"
       >
         <div className="flex items-center gap-4 mb-6">
@@ -70,7 +70,7 @@ const EducationTimeline = () => {
           </h3>
         </div>
 
-        <p className="text-gray-400 leading-8 text-lg font-light tracking-wide">
+        <p className="text-gray-400 leading-8 text-base md:text-lg font-light tracking-wide">
           "A results-driven{" "}
           <span className="text-white font-medium">Frontend Developer</span>{" "}
           transitioning into{" "}
@@ -266,9 +266,20 @@ const EducationTimeline = () => {
       {/* Download CV Button */}
       <div className="text-center mt-12" data-aos="zoom-in">
         <a
-          href="../../../public/cv/Rupok_Hossain_Siam_CV.pdf"
+          href="/cv/Rupok_Hossain_Siam_CV.pdf"
           download
- className="px-8 py-3 border-2 border-[#6ef08e] text-[#6ef08e] font-bold rounded-xl hover:bg-[#6ef08e] hover:text-[#1e2530] transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(110,240,142,0.2)]"
+          className="w-full sm:w-auto
+      px-6 sm:px-8
+      py-3
+      border-2 border-[#6ef08e]
+      text-[#6ef08e]
+      font-bold
+      rounded-xl
+      hover:bg-[#6ef08e]
+      hover:text-[#1e2530]
+      transition-all duration-300
+      inline-flex items-center justify-center gap-2
+      shadow-[0_0_15px_rgba(110,240,142,0.2)] mb-12 md:mb-0"
         >
           <FaDownload /> Download CV
         </a>

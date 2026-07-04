@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { GiMailbox, GiPhone } from "react-icons/gi";
 import siamImg from "../../assets/images/siam.png";
@@ -105,7 +105,7 @@ const Slidebar = () => {
                 rel="noopener noreferrer"
                 className="text-sm font-light"
               >
-                github.com
+                github.com/Rupokhossain
               </a>
             </div>
           </div>
@@ -118,14 +118,25 @@ const Slidebar = () => {
             </div>
             <div>
               <p className="text-xs text-gray-400 uppercase">Location</p>
-              <address className="text-sm font-light">
-                Merul Badda, <br /> Dhaka-1212
-              </address>
+              <p className="text-sm font-light">
+                 Dhaka-1212
+              </p>
             </div>
           </div>
+          
+        </div>
+
+                {/* ------------ SOCIAL LINKS (Requirement #4) ------------ */}
+        <div className="flex sm:hidden lg:flex gap-4 justify-center  w-full pt-4 ">
+           <a href="https://github.com/Rupokhossain" target="_blank" className="text-gray-400 hover:text-[#6ef08e] transition-all"><FaGithub size={20} /></a>
+           <a href="https://www.linkedin.com/in/siam-ahmed-dev/" target="_blank" className="text-gray-400 hover:text-[#6ef08e] transition-all"><FaLinkedin size={20} /></a>
+           <a href="https://www.facebook.com/siamahmed.only" target="_blank" className="text-gray-400 hover:text-[#6ef08e] transition-all"><FaFacebook size={20} /></a>
+           <a href="https://wa.me/8801636755280" target="_blank" className="text-gray-400 hover:text-[#6ef08e] transition-all"><FaWhatsapp size={20} /></a>
         </div>
 
       </div>
+
+      
     </div>
   );
 };
